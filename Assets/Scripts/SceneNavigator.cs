@@ -6,7 +6,24 @@ using TMPro;
 
 public class SceneNavigator : MonoBehaviour
 {
-    public static int SceneIndex;
+    [SerializeField]
+    private int sceneIndex;
+
+    public int SceneIndex
+    {
+        get
+        {
+            return sceneIndex;
+        }
+        set
+        {
+            sceneIndex = value;
+        }
+    }
+    public SceneNavigator Instance 
+    {
+        get; private set;
+    }
 
     [SerializeField]
     private double[] inputs;
@@ -38,20 +55,29 @@ public class SceneNavigator : MonoBehaviour
         }
     }
 
-    private void Awake()
+    void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        if (Instance!=null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
     // Start is called before the first frame update
     void Start()
     {
-        SceneIndex = 0;
+        sceneIndex = 0;
 //        inputs = new double[8];
     }
 
     private void Update()
     {
-        if (SceneIndex == 0)
+        if (sceneIndex == 0)
         {
             SceneManager.sceneLoaded += ResetInput;
         }

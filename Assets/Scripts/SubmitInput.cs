@@ -36,8 +36,8 @@ public class SubmitInput : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SceneNavigator = GameObject.Find("SceneNavigator").GetComponent<SceneNavigator>();
-        SceneIndex = SceneNavigator.SceneIndex;
+        m_sceneNavigator = GameObject.Find("SceneNavigator").GetComponent<SceneNavigator>();
+        SceneIndex = m_sceneNavigator.SceneIndex;
         inputs = m_sceneNavigator.Inputs;
 
         //if (m_sceneNavigator.Inputs == null)

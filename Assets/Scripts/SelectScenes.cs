@@ -7,14 +7,25 @@ public class SelectScenes : MonoBehaviour
 {
     [SerializeField]
     private int SceneIndex;
-
-
-    public 
+    [SerializeField]
+    private SceneNavigator m_sceneNavigator;
+    public SceneNavigator SceneNavigator
+    {
+        set
+        {
+            m_sceneNavigator = value;
+        }
+        get
+        {
+            return m_sceneNavigator;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        SceneIndex =SceneNavigator.SceneIndex;
+        SceneNavigator = GameObject.Find("SceneNavigator").GetComponent<SceneNavigator>();
+        SceneIndex = m_sceneNavigator.SceneIndex;
     //    SceneManager.LoadScene(SceneIndex);
     }
 
@@ -28,20 +39,20 @@ public class SelectScenes : MonoBehaviour
     public void pressBtnForward()
     {
         SceneIndex += 1;
-        SceneNavigator.SceneIndex = SceneIndex;
+        m_sceneNavigator.SceneIndex = SceneIndex;
         SceneManager.LoadScene(SceneIndex);
     }
 
     public void pressBtnBackward()
     {
         SceneIndex -= 1;
-        SceneNavigator.SceneIndex = SceneIndex;
+        m_sceneNavigator.SceneIndex = SceneIndex;
         SceneManager.LoadScene(SceneIndex);
     }
     public void pressBtnReset()
     {
         SceneIndex = 0;
-        SceneNavigator.SceneIndex = SceneIndex;
+        m_sceneNavigator.SceneIndex = SceneIndex;
         SceneManager.LoadScene(SceneIndex);
     }
 }
