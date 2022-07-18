@@ -183,8 +183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u5927\u8C46\u54C1\u7A2E\u30EC\u30B3\u30E1\u30F3\u30C9\n\u58F2\u4E0A\u4E88\u6E2C\u30B7\u30B9\u30C6\u30E0\u03B1\u7248"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 866607c433ae548c7bca719f67e31dfc, type: 2}
-  m_sharedMaterial: {fileID: 2737634172124519747, guid: 866607c433ae548c7bca719f67e31dfc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 629b0f194e5a3c74ba6f931366a0be6c, type: 2}
+  m_sharedMaterial: {fileID: 5404040263727724506, guid: 629b0f194e5a3c74ba6f931366a0be6c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -475,7 +475,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -571,6 +570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf60fbffe0bd34cf09aa06d1641982c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputs: []
+  reccomends: []
 --- !u!1 &1102020566
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,8 +632,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "2022\u5E74\u5EA6PBL-E\n2\u73ED"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 866607c433ae548c7bca719f67e31dfc, type: 2}
-  m_sharedMaterial: {fileID: 2737634172124519747, guid: 866607c433ae548c7bca719f67e31dfc, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 629b0f194e5a3c74ba6f931366a0be6c, type: 2}
+  m_sharedMaterial: {fileID: 5404040263727724506, guid: 629b0f194e5a3c74ba6f931366a0be6c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -695,7 +696,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1102020569
@@ -798,8 +799,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tap to Start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 629b0f194e5a3c74ba6f931366a0be6c, type: 2}
+  m_sharedMaterial: {fileID: 5404040263727724506, guid: 629b0f194e5a3c74ba6f931366a0be6c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -862,7 +863,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1349814876

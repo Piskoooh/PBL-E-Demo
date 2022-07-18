@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ec465ca2d0a3f43c8a498e6403f97806
+guid: c254bca6ab836234fa26b9d5f1d1384f
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -11,11 +11,7 @@ TrueTypeFontImporter:
   fontNames:
   - Noto Sans JP
   fallbackFontReferences:
-  - {fileID: 12800000, guid: 5cc3806e3b02547b6ab3628ff15df802, type: 3}
-  - {fileID: 12800000, guid: ea76df0657b9a4ca28e930a6bed91d52, type: 3}
-  - {fileID: 12800000, guid: 14e28cfe5470941858acedb641f53d90, type: 3}
-  - {fileID: 12800000, guid: 0be973635ab464580b6f9ab6b52382e6, type: 3}
-  - {fileID: 12800000, guid: a4dd2faca9edf4cfda92c49407721eb5, type: 3}
+  - {fileID: 12800000, guid: 20b10b5f7850abe4eb8310e0ec3ae237, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
