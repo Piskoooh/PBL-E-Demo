@@ -65,7 +65,7 @@ public class EstimateIncome : MonoBehaviour
                 break;
             else
             {
-                income[i] = reccomends[i] * inputs[7] * protainPrice;
+                income[i] = reccomends[i] * inputs[7] * protainPrice * 1000;
 
             }
         }
